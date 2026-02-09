@@ -18,13 +18,13 @@ body{
   text-align:center;
 }
 
-/* HERO */
+/* TITLE */
 .hero{
-  padding:100px 20px 50px;
+  padding:60px 20px 30px;
 }
 
 .hero h1{
-  font-size:52px;
+  font-size:48px;
   color:#b11226;
   margin:0;
 }
@@ -34,37 +34,59 @@ body{
   opacity:.8;
 }
 
-/* BUTTON */
-.btn{
-  background:#b11226;
-  color:white;
-  padding:14px 30px;
-  border:none;
-  border-radius:30px;
-  font-size:18px;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.btn:hover{
-  transform:scale(1.1);
-  box-shadow:0 0 20px rgba(177,18,38,.5);
-}
-
-/* POSTER GALLERY */
-.poster-wrap{
+/* DETAILS */
+.details{
   padding:40px 20px;
 }
 
+.cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  width:230px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* POSTERS */
+.poster-section{
+  padding:40px 20px;
+}
+
+.poster-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
 .poster{
-  width:300px;
+  width:320px;
   border-radius:20px;
   box-shadow:0 15px 30px rgba(0,0,0,.2);
   transition:.4s;
 }
 
 .poster:hover{
-  transform:scale(1.08);
+  transform:scale(1.05);
+}
+
+/* ABOUT */
+.about{
+  padding:40px 20px;
+  max-width:700px;
+  margin:auto;
 }
 
 /* FOOTER */
@@ -75,14 +97,10 @@ footer{
   margin-top:40px;
 }
 
-/* ANIMATION */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-.hero,.poster{
-  animation:fadeUp 1s ease;
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1{font-size:32px;}
+  .poster{width:90%;}
 }
 
 </style>
@@ -90,22 +108,57 @@ footer{
 
 <body>
 
-<!-- HERO -->
+<!-- TITLE -->
 <section class="hero">
   <h1>Walk in Her Cramps</h1>
   <p>Experience the Period Simulator</p>
-  <br>
-
-  <!-- BUTTON NOW WORKS -->
-  <a href="poster1.jpg" target="_blank">
-    <button class="btn">Visit Our Stall</button>
-  </a>
-
 </section>
 
-<!-- SHOW POSTER -->
-<section class="poster-wrap">
-  <img src="poster1.jpg" class="poster">
+<!-- STALL DETAILS -->
+<section class="details">
+  <h2>Stall Details</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>💰 Pricing</h3>
+      <p>1 Person — ₹150</p>
+      <p>2 Persons — ₹250</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Venue</h3>
+      <p>Ameya’26 Fest</p>
+      <p>SRM AP</p>
+    </div>
+
+    <div class="card">
+      <h3>📅 Date</h3>
+      <p>11–12 Feb 2026</p>
+      <p>Stall No: —</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- POSTERS -->
+<section class="poster-section">
+  <h2>Awareness Posters</h2>
+
+  <div class="poster-grid">
+    <img src="poster1.jpg" class="poster">
+    <img src="poster2.jpg" class="poster">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>Why This Stall?</h2>
+  <p>
+    This experience builds empathy and awareness about menstrual pain.
+    Walk in her cramps and understand what many women experience every month.
+    Let’s break stigma and build understanding.
+  </p>
 </section>
 
 <footer>
