@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Walk in Her Cramps</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#fff1f1,#ffe5e5);
+  color: #7a1f1f;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("poster1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 22px;
+}
+
+.btn {
+  background: #e74c3c;
+  padding: 14px 28px;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* POSTER SHOWCASE */
+.poster {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+footer {
+  background: #8b1e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 { font-size: 36px; }
+  .hero p { font-size: 18px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Walk in Her Cramps</h1>
+    <p>Experience the Period Simulator</p>
+    <button class="btn">Visit Our Stall</button>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="section">
+  <h2>Stall Details</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>💰 Pricing</h3>
+      <p>1 Person — ₹150</p>
+      <p>2 Persons — ₹250</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Venue</h3>
+      <p>Ameya’26 Fest</p>
+      <p>SRM AP</p>
+    </div>
+
+    <div class="card">
+      <h3>📅 Date</h3>
+      <p>11–12 Feb 2026</p>
+      <p>Stall No: Update</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- POSTER SECTION -->
+<section class="section">
+  <h2>Our Awareness Posters</h2>
+
+  <img src="poster1.jpg" class="poster">
+  <img src="poster2.jpg" class="poster">
+
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>Why This Stall?</h2>
+  <p style="max-width:600px;margin:auto;">
+    This experience builds empathy and awareness about menstrual pain.
+    Walk in her cramps and understand what many women go through every month.
+  </p>
+</section>
+
+<footer>
+  © 2026 Ameya Fest | Period Awareness Initiative
+</footer>
+
+</body>
+</html>
